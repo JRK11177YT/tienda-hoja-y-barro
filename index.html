@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoja & Barro: plantas de interior y cerámica artesanal hecha a mano.">
+  <title>Hoja & Barro · Plantas y cerámica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a href="#" class="logo">Hoja <span>&amp;</span> Barro</a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+      <label for="menu-toggle" class="menu-boton" aria-hidden="true"><span></span></label>
+      <nav class="nav">
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#productos" class="nav__carrito">Cesta (0)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="contenedor hero__fila">
+        <div class="hero__texto">
+          <p class="etiqueta">Nueva colección de otoño</p>
+          <h1>Plantas que dan vida.<br><em>Macetas hechas a mano.</em></h1>
+          <p class="hero__sub">Seleccionamos plantas de interior fáciles de cuidar y las acompañamos con cerámica de pequeños talleres locales.</p>
+          <div class="hero__botones">
+            <a href="#productos" class="boton boton--primario">Ver productos</a>
+            <a href="#nosotros" class="boton boton--secundario">Conócenos</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="maceta-grande">
+            <svg viewBox="0 0 200 220">
+              <path d="M100 130 C 60 90, 40 40, 70 10 C 85 50, 95 90, 100 130Z" fill="#5d7a4e"/>
+              <path d="M100 130 C 140 90, 165 50, 140 15 C 120 55, 108 95, 100 130Z" fill="#7a9a63"/>
+              <path d="M100 130 C 95 80, 100 40, 100 0 C 112 45, 108 90, 100 130Z" fill="#4a6640"/>
+              <path d="M45 130 H155 L140 215 H60 Z" fill="#c4704a"/>
+              <rect x="38" y="122" width="124" height="18" rx="4" fill="#d9865e"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENTAJAS -->
+    <section class="ventajas">
+      <div class="contenedor ventajas__fila">
+        <div><strong>Envío gratis</strong><span>en pedidos desde 40 €</span></div>
+        <div><strong>Plantas sanas</strong><span>o te la cambiamos</span></div>
+        <div><strong>Hecho a mano</strong><span>talleres de la zona</span></div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Explora por categoría</h2>
+        <div class="categorias">
+          <a href="#productos" class="categoria categoria--1"><span>Plantas de interior</span></a>
+          <a href="#productos" class="categoria categoria--2"><span>Cerámica</span></a>
+          <a href="#productos" class="categoria categoria--3"><span>Cuidado y accesorios</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="seccion seccion--suave">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Los más queridos</h2>
+        <div class="productos">
+          <article class="producto">
+            <div class="producto__img img--verde"><span class="insignia">Nuevo</span></div>
+            <div class="producto__info">
+              <h3>Monstera Deliciosa</h3>
+              <p>Maceta de 17 cm · Luz indirecta</p>
+              <div class="producto__pie"><span class="precio">24,90 €</span><button class="boton-mini">Añadir</button></div>
+            </div>
+          </article>
+          <article class="producto">
+            <div class="producto__img img--terracota"></div>
+            <div class="producto__info">
+              <h3>Maceta Duna</h3>
+              <p>Gres esmaltado · 14 cm</p>
+              <div class="producto__pie"><span class="precio">18,00 €</span><button class="boton-mini">Añadir</button></div>
+            </div>
+          </article>
+          <article class="producto">
+            <div class="producto__img img--salvia"><span class="insignia insignia--oferta">-20%</span></div>
+            <div class="producto__info">
+              <h3>Pothos Golden</h3>
+              <p>Colgante · Muy resistente</p>
+              <div class="producto__pie"><span class="precio"><s>15,00 €</s> 12,00 €</span><button class="boton-mini">Añadir</button></div>
+            </div>
+          </article>
+          <article class="producto">
+            <div class="producto__img img--arena"></div>
+            <div class="producto__info">
+              <h3>Jarrón Alba</h3>
+              <p>Cerámica mate · 22 cm</p>
+              <div class="producto__pie"><span class="precio">29,50 €</span><button class="boton-mini">Añadir</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="seccion">
+      <div class="contenedor nosotros">
+        <div class="nosotros__img" aria-hidden="true"></div>
+        <div>
+          <p class="etiqueta">Nuestra historia</p>
+          <h2>Una pequeña tienda con mucho cariño</h2>
+          <p>Empezamos en 2019 con un puesto en el mercado del barrio. Hoy seguimos igual: elegimos cada planta una a una y trabajamos con ceramistas que conocemos por su nombre.</p>
+          <ul class="lista-check">
+            <li>Asesoramiento personalizado de cuidados</li>
+            <li>Embalaje sin plástico</li>
+            <li>Taller de trasplante cada mes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="contacto" class="newsletter">
+      <div class="contenedor newsletter__caja">
+        <h2>Únete a nuestra comunidad verde</h2>
+        <p>Consejos de cuidado y un 10 % de descuento en tu primer pedido.</p>
+        <form class="newsletter__form" onsubmit="return false;">
+          <label for="email" class="sr-only">Correo electrónico</label>
+          <input type="email" id="email" placeholder="tu@correo.com" required>
+          <button type="submit" class="boton boton--primario">Suscribirme</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <div>
+        <a href="#" class="logo">Hoja <span>&amp;</span> Barro</a>
+        <p>Calle del Olivo 12 · Madrid<br>Lun–Sáb · 10:00–20:00</p>
+      </div>
+      <div>
+        <h4>Tienda</h4>
+        <a href="#productos">Plantas</a>
+        <a href="#productos">Cerámica</a>
+        <a href="#productos">Accesorios</a>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <a href="#">Envíos</a>
+        <a href="#">Devoluciones</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+    <div class="contenedor pie__legal">
+      <span>© 2026 Hoja &amp; Barro</span>
+      <span class="version">v1.0.0</span>
+    </div>
+  </footer>
+
+</body>
+</html>
